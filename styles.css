@@ -25,7 +25,7 @@ nav {
 
 .nav-links li a {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-size: 16px;
 }
 
@@ -53,13 +53,13 @@ nav {
   list-style: none;
   display: flex;
   margin-right: 15px;
-  gap: 15px;
 }
 
 .nav-links li a {
   color: #fff;
+
   text-decoration: none;
-  font-size: 18px;
+  text-wrap: nowrap;
 }
 
 .nav-links li a:hover {
@@ -69,6 +69,7 @@ nav {
 .social-links {
   margin-left: 15px;
   display: flex;
+  list-style: none;
   align-items: center;
   gap: 10px;
 }
@@ -87,6 +88,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  text-wrap: nowrap;
 }
 
 .container {
@@ -101,6 +103,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
+  gap: 30px;
 }
 
 .intro-text {
@@ -225,7 +228,7 @@ nav {
   padding: 20px;
   width: 300px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .book img {
@@ -274,18 +277,16 @@ nav {
 
 .about_the_author {
   display: flex;
+  gap: 90px;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 
 .image-container {
   position: relative;
   display: inline-block;
   background: #fff;
-  padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
   max-width: 90%;
 }
 
@@ -304,11 +305,6 @@ nav {
   height: calc(100% + 0px);
   border: 6px solid #ffd700;
   z-index: -1;
-}
-
-.author-content {
-  text-align: left;
-  margin-right: auto;
 }
 
 .about-the-author-yellow-line {
@@ -430,18 +426,16 @@ nav {
   background: #1c3766;
   margin-bottom: 20px;
   align-items: center;
+  gap: 120px;
   justify-content: center;
   padding: 20px;
 }
-.get_book_copy_today_images {
-  margin-left: 200px;
-}
+
 .what_will_you_learn {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  flex-direction: row;
   padding: 50px;
 }
 .what_will_you_learn_div h2 {
@@ -452,7 +446,7 @@ nav {
 }
 .what_will_you_learn_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -462,7 +456,6 @@ nav {
   gap: 20px;
   max-width: 470px;
   align-items: center;
-  width: 100%;
   margin-right: 70px;
 }
 
@@ -569,9 +562,8 @@ nav {
 }
 .words_from_reader {
   display: flex;
-  margin: 0 180px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding: 40px;
+  gap: 60px;
   justify-content: center;
   align-items: center;
 }
@@ -579,8 +571,6 @@ nav {
   background-color: #1c3766;
   width: 260px;
   justify-content: center;
-  text-align: center;
-  margin-left: 20px;
 }
 .words_from_reader_card_view p {
   color: white;
@@ -593,7 +583,7 @@ nav {
   font-size: 12px;
   padding: 5px;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 .words_from_reader_card_view_image-container img {
   width: 60px;
@@ -683,7 +673,6 @@ nav {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  height: 230px;
   margin: 0 auto;
   width: 980px;
   padding: 30px;
@@ -782,6 +771,7 @@ footer {
 
 .social-icons {
   display: flex;
+  list-style: none;
 }
 .social-icons a {
   display: inline-block;
