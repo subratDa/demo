@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: #1c3766;
+  /* background-color: red; */
 }
 
 header {
@@ -99,7 +100,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .intro-text {
@@ -276,7 +277,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 50px;
 }
 
 .image-container {
@@ -498,8 +498,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin: 0 auto;
-  width: 980px;
+  margin: 0 130px;
   background-color: #f7faff;
 }
 
@@ -579,7 +578,6 @@ nav {
 .words_from_reader_card_view {
   background-color: #1c3766;
   width: 260px;
-  height: 200px;
   justify-content: center;
   text-align: center;
   margin-left: 20px;
@@ -685,9 +683,9 @@ nav {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 820px;
   height: 230px;
   margin: 0 auto;
+  width: 980px;
   padding: 30px;
   text-align: center;
 }
@@ -820,11 +818,17 @@ footer {
   .book {
     width: 270px;
   }
+  .update_card {
+    width: 620px;
+  }
+  .card-container {
+    width: 700px;
+  }
 }
 
 @media (max-width: 992px) {
   nav {
-    padding: 0 100px;
+    padding: 0 10px;
   }
   .intro-text {
     max-width: 70%;
@@ -841,6 +845,12 @@ footer {
   .cta-buttons {
     flex-direction: column;
   }
+  .update_card {
+    width: 620px;
+  }
+  .card-container {
+    width: 700px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -854,12 +864,18 @@ footer {
   }
 
   .book {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .about_the_author {
-    flex-direction: column;
+    flex-direction: row;
+    width: 1024px;
+  }
+  .enhance_knowledge_and_vision_grid-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 270px;
   }
 
   .container {
@@ -897,6 +913,12 @@ footer {
   .books {
     flex-direction: column;
     align-items: center;
+  }
+  .update_card {
+    width: 620px;
+  }
+  .order-button a {
+    padding: 0 0;
   }
 }
 
@@ -945,5 +967,8 @@ footer {
   }
   .order-button {
     margin-top: 8px;
+  }
+  .update_card {
+    width: 620px;
   }
 }
