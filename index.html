@@ -33,7 +33,22 @@
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#pages">Pages</a></li>
+            <!-- <li><a href="#pages">Pages</a></li> -->
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Pages
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#authorbook">Authors Book</a>
+                  <a href="#whatwillyoulearn">What will you learn</a>
+                  <a href="#enhenceknowledge">Enhance knowledge</a>
+                  <a href="#wordfromreader">Word from reader</a>
+                  <a href="#article">Article</a>
+                </div>
+              </div>
+            </div>
             <li><a href="#contactus">Contact Us</a></li>
             <li>
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
@@ -70,7 +85,7 @@
         </div>
       </section>
     </main>
-    <section class="the_author_book">
+    <section class="the_author_book" id="authorbook">
       <h2>The Author’s Book</h2>
       <div class="yellow-line"></div>
       <div class="books">
@@ -199,7 +214,7 @@
         </div>
       </div>
     </section>
-    <section class="what_will_you_learn">
+    <section class="what_will_you_learn" id="whatwillyoulearn">
       <div>
         <div class="what_will_you_learn_div">
           <h2>What Will You Learn?</h2>
@@ -243,7 +258,7 @@
         </div>
       </div>
     </section>
-    <section class="enhance_knowledge_and_vision">
+    <section class="enhance_knowledge_and_vision" id="enhenceknowledge">
       <div class="enhance_knowledge_and_vision_head">
         <h2>Enhance Knowledge And Vision</h2>
         <div class="yellow-line"></div>
@@ -300,7 +315,7 @@
         <p>Have any questions? <a href="#">Contact us</a></p>
       </div>
     </section>
-    <section class="words_from_reader">
+    <section class="words_from_reader" id="wordfromreader">
       <div class="author-content">
         <h2>Words From Our Readers</h2>
         <div class="about-the-author-yellow-line"></div>
@@ -319,85 +334,87 @@
           <div>(4.8/5)</div>
         </div>
       </div>
-      <div>
-        <div class="words_from_reader_card_view">
-          <div>
-            <div class="words_from_reader_card_view_name_ratting">
-              <div class="words_from_reader_card_view_image-container">
-                <img src="person1.jpeg" alt="Person with a laptop" />
-              </div>
-              <div class="words_from_reader_card_view_name_ratting_text">
-                <p>James Willium</p>
-                <div class="rating">
-                  <div class="circle checked"></div>
-                  <div class="circle checked"></div>
-                  <div class="circle checked"></div>
-                  <div class="circle checked"></div>
-                  <div class="circle half-checked"></div>
-                  <div>(4.8/5)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>"Great book collection"</p>
-          <h2>
-            I was searching this book for many years and I was happy that I
-            could find it here
-          </h2>
-        </div>
-        <div class="words_from_reader_card_view">
-          <div>
-            <div class="words_from_reader_card_view_name_ratting">
-              <div class="words_from_reader_card_view_image-container">
-                <img src="person2.jpeg" alt="Person with a laptop" />
-              </div>
-              <div class="words_from_reader_card_view_name_ratting_text">
-                <p>Angelina Flora</p>
-                <div class="rating">
-                  <div class="circle checked"></div>
-                  <div class="circle checked"></div>
-                  <div class="circle checked"></div>
-                  <div class="circle checked"></div>
-                  <div class="circle half-checked"></div>
-                  <div>(4.8/5)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>"Perfect Responce Author"</p>
-          <h2>
-            I had a question about the book and the author responce was great
-            and responce was great and comfort.
-          </h2>
-        </div>
-      </div>
-      <div class="words_from_reader_card_view">
+      <div class="div_display">
         <div>
-          <div class="words_from_reader_card_view_name_ratting">
-            <div class="words_from_reader_card_view_image-container">
-              <img src="person3.jpeg" alt="Person with a laptop" />
+          <div class="words_from_reader_card_view">
+            <div>
+              <div class="words_from_reader_card_view_name_ratting">
+                <div class="words_from_reader_card_view_image-container">
+                  <img src="person1.jpeg" alt="Person with a laptop" />
+                </div>
+                <div class="words_from_reader_card_view_name_ratting_text">
+                  <p>James Willium</p>
+                  <div class="rating">
+                    <div class="circle checked"></div>
+                    <div class="circle checked"></div>
+                    <div class="circle checked"></div>
+                    <div class="circle checked"></div>
+                    <div class="circle half-checked"></div>
+                    <div>(4.8/5)</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="words_from_reader_card_view_name_ratting_text">
-              <p>Chris Adams</p>
-              <div class="rating">
-                <div class="circle checked"></div>
-                <div class="circle checked"></div>
-                <div class="circle checked"></div>
-                <div class="circle checked"></div>
-                <div class="circle half-checked"></div>
-                <div>(4.8/5)</div>
+            <p>"Great book collection"</p>
+            <h2>
+              I was searching this book for many years and I was happy that I
+              could find it here
+            </h2>
+          </div>
+          <div class="words_from_reader_card_view">
+            <div>
+              <div class="words_from_reader_card_view_name_ratting">
+                <div class="words_from_reader_card_view_image-container">
+                  <img src="person2.jpeg" alt="Person with a laptop" />
+                </div>
+                <div class="words_from_reader_card_view_name_ratting_text">
+                  <p>Angelina Flora</p>
+                  <div class="rating">
+                    <div class="circle checked"></div>
+                    <div class="circle checked"></div>
+                    <div class="circle checked"></div>
+                    <div class="circle checked"></div>
+                    <div class="circle half-checked"></div>
+                    <div>(4.8/5)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>"Perfect Responce Author"</p>
+            <h2>
+              I had a question about the book and the author responce was great
+              and responce was great and comfort.
+            </h2>
+          </div>
+        </div>
+        <div class="words_from_reader_card_view">
+          <div>
+            <div class="words_from_reader_card_view_name_ratting">
+              <div class="words_from_reader_card_view_image-container">
+                <img src="person3.jpeg" alt="Person with a laptop" />
+              </div>
+              <div class="words_from_reader_card_view_name_ratting_text">
+                <p>Chris Adams</p>
+                <div class="rating">
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle half-checked"></div>
+                  <div>(4.8/5)</div>
+                </div>
               </div>
             </div>
           </div>
+          <p>"Creative writting skill"</p>
+          <h2>
+            Sent an mail after the books arrived to ask about the author and I
+            received a reply
+          </h2>
         </div>
-        <p>"Creative writting skill"</p>
-        <h2>
-          Sent an mail after the books arrived to ask about the author and I
-          received a reply
-        </h2>
       </div>
     </section>
-    <section class="article_and_resources">
+    <section class="article_and_resources" id="article">
       <div class="enhance_knowledge_and_vision_head">
         <h2>Article And Resources</h2>
         <div class="yellow-line"></div>
@@ -490,7 +507,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Articles</a></li>
+            <li><a href="#article">Articles</a></li>
             <li><a href="#">Our Store</a></li>
             <li>
               <a href="#contactus">Contact Us</a>
