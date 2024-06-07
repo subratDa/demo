@@ -8,17 +8,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="icon" href="page_logo.jpeg" type="image/x-icon" />
     <title>Book Landing Page</title>
   </head>
   <body>
     <header class="headder">
-      <nav>
+      <nav class="navigation">
         <div class="headder_logo_and_link">
           <div class="logo"><a href="#">Pages</a></div>
           <div class="social-links">
-            <!-- <a href="#"><img src="facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="twitter.png" alt="Twitter" /></a>
-            <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a> -->
             <li>
               <a href="#"><i class="fab fa-facebook"></i></a>
             </li>
@@ -33,10 +31,10 @@
         </div>
         <div class="headder_logo_and_link">
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
             <li>
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </li>
@@ -46,7 +44,7 @@
       </nav>
     </header>
     <main class="container">
-      <section class="intro">
+      <section class="intro" id="home">
         <div class="intro-text">
           <div class="welcome">
             <span class="welcome-line"></span>
@@ -104,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="about_the_author">
+    <section class="about_the_author" id="about">
       <div class="image-container">
         <img src="img.jpg" alt="Person with a laptop" />
       </div>
@@ -185,7 +183,7 @@
         </div>
       </div>
     </section>
-    <section class="get_book_copy_today">
+    <section class="get_book_copy_today" id="pages">
       <div class="get_book_copy_today_div">
         <div class="get_book_copy_today_text">
           <p>Get Book Copy Today!</p>
@@ -312,11 +310,14 @@
           where we discover new writers, where children<br />
           get hooked on the thrill of reading that can last a lifetime.
         </p>
-        <span class="book-detail pages"></span>
-        <span class="book-detail pages"></span>
-        <span class="book-detail pages"></span>
-        <span class="book-detail pages"></span>
-        <span class="book-detail pages">(4.8/5)</span>
+        <div class="rating">
+          <div class="circle checked"></div>
+          <div class="circle checked"></div>
+          <div class="circle checked"></div>
+          <div class="circle checked"></div>
+          <div class="circle half-checked"></div>
+          <div>(4.8/5)</div>
+        </div>
       </div>
       <div>
         <div class="words_from_reader_card_view">
@@ -327,11 +328,14 @@
               </div>
               <div class="words_from_reader_card_view_name_ratting_text">
                 <p>James Willium</p>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
+                <div class="rating">
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle half-checked"></div>
+                  <div>(4.8/5)</div>
+                </div>
               </div>
             </div>
           </div>
@@ -348,12 +352,15 @@
                 <img src="person2.jpeg" alt="Person with a laptop" />
               </div>
               <div class="words_from_reader_card_view_name_ratting_text">
-                <p>James Willium</p>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
-                <span class="book-detail pages"></span>
+                <p>Angelina Flora</p>
+                <div class="rating">
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle checked"></div>
+                  <div class="circle half-checked"></div>
+                  <div>(4.8/5)</div>
+                </div>
               </div>
             </div>
           </div>
@@ -371,12 +378,15 @@
               <img src="person3.jpeg" alt="Person with a laptop" />
             </div>
             <div class="words_from_reader_card_view_name_ratting_text">
-              <p>James Willium</p>
-              <span class="book-detail pages"></span>
-              <span class="book-detail pages"></span>
-              <span class="book-detail pages"></span>
-              <span class="book-detail pages"></span>
-              <span class="book-detail pages"></span>
+              <p>Chris Adams</p>
+              <div class="rating">
+                <div class="circle checked"></div>
+                <div class="circle checked"></div>
+                <div class="circle checked"></div>
+                <div class="circle checked"></div>
+                <div class="circle half-checked"></div>
+                <div>(4.8/5)</div>
+              </div>
             </div>
           </div>
         </div>
@@ -441,7 +451,7 @@
         </div>
       </div>
     </section>
-    <section class="get_update">
+    <section class="get_update" id="contactus">
       <div class="update_card">
         <p>Get The Best Updates</p>
         <div class="update_card_blue_line"></div>
@@ -473,34 +483,32 @@
             <li>
               <a href="#"><i class="fab fa-instagram"></i></a>
             </li>
-            <!-- <a href="#"><img src="facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="Twitter.png" alt="Twitter" /></a>
-            <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="instag.jpeg" alt="Instagram" /></a> -->
           </div>
         </div>
         <div class="footer-section">
           <h3>Explore</h3>
           <ul>
-            <li class="book-detail pages"><a href="#">Home</a></li>
-            <li class="book-detail pages"><a href="#">About</a></li>
-            <li class="book-detail pages"><a href="#">Articles</a></li>
-            <li class="book-detail pages"><a href="#">Our Store</a></li>
-            <li class="book-detail pages"><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Our Store</a></li>
+            <li>
+              <a href="#contactus">Contact Us</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>Utility Pages</h3>
           <ul>
-            <li class="book-detail pages">
+            <li>
               <a href="#">Style Guide</a>
             </li>
-            <li class="book-detail pages"><a href="#">404 Not Found</a></li>
-            <li class="book-detail pages">
+            <li><a href="#">404 Not Found</a></li>
+            <li>
               <a href="#">Password Protected</a>
             </li>
-            <li class="book-detail pages"><a href="#">Licenses</a></li>
-            <li class="book-detail pages"><a href="#">Changelog</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Changelog</a></li>
           </ul>
         </div>
         <div class="footer-section">
