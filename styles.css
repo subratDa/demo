@@ -369,6 +369,8 @@ header {
 .about_the_author {
   display: flex;
   gap: 90px;
+  background-color: #f5f8ff;
+  padding: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -377,6 +379,7 @@ header {
   position: relative;
   display: inline-block;
   background: #fff;
+  z-index: 5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 90%;
 }
@@ -543,8 +546,8 @@ header {
 .grid-item {
   background-color: #f5f8ff;
   padding: 20px;
-  width: 180px;
-  height: 130px;
+  width: 210px;
+  height: 170px;
   text-align: left;
   font-family: Arial, sans-serif;
 }
@@ -921,6 +924,7 @@ footer {
 /* General Styles */
 .trusted_by_the_best {
   padding: 20px;
+  margin-top: 100px;
 }
 
 .trusted_by_the_best_companies {
@@ -995,7 +999,10 @@ footer {
   }
 
   .about_the_author {
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     /* width: 1024px; */
   }
   .enhance_knowledge_and_vision_grid-item {
@@ -1049,72 +1056,9 @@ footer {
   .trusted_by_the_best_companies {
     flex-direction: row;
   }
-  /* .div_display {
-    flex-direction: column;
-  } */
-  /* General Styles */
   .div_display {
-    display: flex;
     flex-direction: column;
-    gap: 20px;
   }
-
-  .words_from_reader_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    overflow: hidden; /* Hide scrollbar in larger screens */
-  }
-
-  .words_from_reader_card_view {
-    flex: 0 0 30%; /* Adjust as needed for larger screens */
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-  }
-
-  .words_from_reader_card_view_image-container img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  .words_from_reader_card_view_name_ratting {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .words_from_reader_card_view_name_ratting_text p {
-    margin: 0;
-  }
-
-  .rating {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #ccc;
-  }
-
-  .circle.checked {
-    background: #ffc857;
-  }
-
-  .circle.half-checked {
-    background: linear-gradient(to right, #ffc857 50%, #ccc 50%);
-  }
-
-  /* Mobile Styles */
-  @media (max-width: 576px) {
-  }
-
   .what_will_you_learn_container {
     flex-direction: column;
     gap: 20px;
@@ -1145,7 +1089,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 150px;
+    width: 215px;
     background-color: #1a237e;
     height: 0;
     transition: all 0.3s ease-in;
@@ -1158,7 +1102,7 @@ footer {
     margin-top: 1.5rem;
   }
   .nav > #nav-check:checked ~ .nav-list {
-    height: calc(260px - 50px);
+    height: calc(480px - 50px);
   }
   .scroll-container {
     display: flex;
@@ -1201,7 +1145,7 @@ footer {
   }
 
   .about_the_author {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .enhance_knowledge_and_vision_grid-item {
@@ -1279,18 +1223,6 @@ footer {
     display: flex;
     overflow-x: scroll;
     flex-wrap: nowrap;
-  }
-  .words_from_reader_container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-y: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling */
-  }
-
-  .words_from_reader_card_view {
-    flex: 0 0 80%; /* Adjust the width of each card for mobile view */
-    margin-right: 10px;
-    width: auto; /* Ensure cards take full available width */
   }
 }
 @media (max-width: 480px) {
