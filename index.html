@@ -30,26 +30,38 @@
           </div>
         </div>
         <div class="headder_logo_and_link">
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#pages">Pages</a></li> -->
-            <div class="navbar">
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Pages
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#authorbook">Authors Book</a>
-                  <a href="#whatwillyoulearn">What will you learn</a>
-                  <a href="#enhenceknowledge">Enhance knowledge</a>
-                  <a href="#wordfromreader">Word from reader</a>
-                  <a href="#article">Article</a>
+          <nav class="nav">
+            <input type="checkbox" id="nav-check" />
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+
+            <ul class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contactus">Contact</a></li>
+              <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Pages
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#authorbook">Authors Book</a>
+                    <a href="#whatwillyoulearn">What will you learn</a>
+                    <a href="#enhenceknowledge">Enhance knowledge</a>
+                    <a href="#wordfromreader">Word from reader</a>
+                    <a href="#article">Article</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+          </nav>
+          <ul style="list-style: none">
             <li>
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </li>
@@ -163,8 +175,8 @@
         <h2>Trusted By The Best</h2>
         <div class="yellow-line"></div>
       </div>
-      <div class="trusted_by_the_best_companies">
-        <div class="trusted_by_the_best_companies_images">
+      <div class="trusted_by_the_best_companies scroll-container">
+        <div class="trusted_by_the_best_companies_images scroll-area">
           <img src="amazen_corp.png" alt="amazen_corp" />
           <p>Amazen Corp.</p>
           <h5>
@@ -172,7 +184,7 @@
             <br />find quality materials
           </h5>
         </div>
-        <div class="trusted_by_the_best_companies_images">
+        <div class="trusted_by_the_best_companies_images scroll-area">
           <img src="megan_books.png" alt="megan_books" />
           <p>Megan Books</p>
           <h5>
@@ -180,7 +192,7 @@
             <br />book inventary
           </h5>
         </div>
-        <div class="trusted_by_the_best_companies_images">
+        <div class="trusted_by_the_best_companies_images scroll-area">
           <img src="megank.jpeg" alt="megank" />
           <p>Megank</p>
           <h5>
@@ -188,7 +200,7 @@
             <br />wine black books.
           </h5>
         </div>
-        <div class="trusted_by_the_best_companies_images">
+        <div class="trusted_by_the_best_companies_images scroll-area">
           <img src="urban_store.png" alt="urban_store" />
           <p>Urban Store</p>
           <h5>
@@ -363,7 +375,9 @@
           </div>
           <div class="words_from_reader_card_view">
             <div>
-              <div class="words_from_reader_card_view_name_ratting">
+              <div
+                class="words_from_reader_card_view_name_ratting scroll-container"
+              >
                 <div class="words_from_reader_card_view_image-container">
                   <img src="person2.jpeg" alt="Person with a laptop" />
                 </div>
