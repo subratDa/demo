@@ -538,7 +538,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin: 0 130px;
+  padding: 20px;
   background-color: #f7faff;
 }
 
@@ -984,10 +984,21 @@ footer {
     align-items: center;
   }
   .update_card {
-    width: 620px;
+    width: 520px;
   }
   .order-button a {
     padding: 0 0;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trusted_by_the_best_companies {
+    flex-direction: column;
+  }
+  .div_display {
+    flex-direction: column;
   }
 }
 
@@ -1055,6 +1066,14 @@ footer {
     padding: 0;
   }
   .div_display {
+    flex-direction: column;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trusted_by_the_best_companies {
     flex-direction: column;
   }
 }
