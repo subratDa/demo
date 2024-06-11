@@ -34,6 +34,7 @@ header {
 .nav > .nav-list {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .nav > .nav-list > li {
   list-style-type: none;
@@ -86,6 +87,7 @@ header {
   font-size: 16px;
   border: none;
   outline: none;
+  padding: 0px;
   color: white;
   background-color: inherit;
   font-family: inherit;
@@ -99,7 +101,9 @@ header {
 
 .dropdown-content {
   display: none;
+  list-style: none;
   position: absolute;
+  padding: 0;
   background-color: #1c3766;
   min-width: 160px;
   z-index: 1;
@@ -115,11 +119,15 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #ffc857;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.cart-button {
+  list-style: none;
+  padding: 0;
 }
 
 .headder_logo_and_link li a i {
@@ -168,9 +176,7 @@ header {
   width: 20px;
   margin-left: 5px;
 }
-.order-button {
-  margin-top: 16px;
-}
+
 .order-button a {
   background-color: #ffc857;
   color: #1c3766;
@@ -310,6 +316,80 @@ header {
   justify-content: center;
   gap: 20px;
 }
+.single-item {
+  border: solid 6px #fff;
+  border-radius: 10px;
+  max-width: 400px;
+  background: #f5f5f5;
+  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+.left-set,
+.right-set {
+  width: 50%;
+  height: 100%;
+}
+.left-set {
+  float: left;
+  overflow: hidden;
+}
+.left-set img {
+  width: 100px;
+  height: 200px;
+  margin-top: 30px;
+}
+.right-set {
+  float: right;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+.right-set .name,
+.right-set .subname {
+  font-weight: bold;
+}
+.right-set .name {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.right-set .subname {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.right-set .price {
+  padding: 1rem 0;
+  color: #ffce00;
+  font-size: 27px;
+}
+.right-set .description p {
+  font-size: 0.9rem;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.right-set .color {
+  margin: 1rem 0;
+}
+.right-set .color:after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.right-set button {
+  width: 100%;
+  height: 2rem;
+  cursor: pointer;
+  background: none;
+  border: solid 2px #111;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  transition: all 0.4s ease;
+}
+.right-set button:hover {
+  background: #ffce00;
+}
 
 .book {
   background-color: #fff;
@@ -328,6 +408,7 @@ header {
 .book h3 {
   font-size: 1.2em;
   margin: 15px 0;
+  text-align: left;
 }
 
 .book p {
@@ -352,6 +433,7 @@ header {
   background-color: #fff;
   color: #ffce00;
   text-decoration: none;
+  text-wrap: nowrap;
   border-radius: 5px;
   margin-top: 10px;
   border: 2px solid #ffce00;
@@ -537,7 +619,7 @@ header {
 .grid-item {
   background-color: #f5f8ff;
   padding: 20px;
-  width: 210px;
+  /* width: 210px; */
   height: 170px;
   text-align: left;
   font-family: Arial, sans-serif;
@@ -588,12 +670,12 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 10px;
+  gap: 6px;
   color: #1c3766;
 }
 
 .info span {
-  display: flex;
-  align-items: center;
+  text-align: left;
 }
 .enhance_knowledge_and_vision_head {
   margin-bottom: 20px;
@@ -675,28 +757,6 @@ header {
 .words_from_reader_card_view_name_ratting_text {
   margin: 0 auto;
 }
-.scroll-new-container,
-.scroll-new-area {
-  height: 200px;
-  font-size: 60px;
-}
-
-.scroll-new-container::-webkit-scrollbar {
-  display: none;
-}
-.scroll-new-container {
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-}
-
-.scroll-new-area {
-  scroll-snap-align: start;
-}
-
-.scroll-new-container,
-.scroll-new-area {
-  margin: 0 auto;
-}
 
 .article_and_resources {
   text-align: center;
@@ -763,7 +823,7 @@ header {
   margin: 0 30px;
 }
 .get_update {
-  padding: 20px;
+  margin: 20px;
 }
 .update_card {
   background-color: #ffc857;
@@ -771,7 +831,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin: 0 auto;
-  /* width: 980px; */
+  max-width: 980px;
   padding: 30px;
   text-align: center;
 }
@@ -853,6 +913,11 @@ header {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.div_flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 footer {
@@ -950,6 +1015,11 @@ footer {
   flex: 1;
   margin: 10px;
 }
+/* .div-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+} */
 
 @media (max-width: 1200px) {
   .navigation {
@@ -980,9 +1050,7 @@ footer {
   .book {
     width: 240px;
   }
-  .order-button {
-    margin-top: 20px;
-  }
+
   .cta-buttons {
     flex-direction: column;
   }
@@ -1052,9 +1120,6 @@ footer {
     align-items: center;
   }
 
-  .order-button a {
-    padding: 0 0;
-  }
   .card-container {
     flex-direction: column;
     justify-content: center;
@@ -1077,7 +1142,6 @@ footer {
   }
   .nav > .nav-btn {
     display: inline-block;
-    position: absolute;
   }
   .nav > .nav-btn > label {
     display: inline-block;
@@ -1095,13 +1159,14 @@ footer {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 215px;
-    background-color: #1c3766;
+    text-align: center;
+    gap: 10px;
+    width: 190px;
+    background-color: #3a5480;
     height: 0;
     transition: all 0.3s ease-in;
     top: 60px;
-
+    right: 0px;
     overflow: hidden;
   }
   .nav > .nav-list > li {
@@ -1109,7 +1174,7 @@ footer {
     margin-top: 1.5rem;
   }
   .nav > #nav-check:checked ~ .nav-list {
-    height: calc(480px - 50px);
+    height: calc(500px - 50px);
   }
   .scroll-container {
     display: flex;
@@ -1135,6 +1200,40 @@ footer {
   }
   .book-details {
     flex-direction: column;
+    padding-left: 12px;
+  }
+  .div_flex {
+    flex-direction: column;
+  }
+  .scroll-new-container,
+  .scroll-new-area {
+    height: 200px;
+    font-size: 60px;
+  }
+
+  .scroll-new-container::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-new-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .scroll-new-area {
+    scroll-snap-align: start;
+  }
+
+  .scroll-new-container,
+  .scroll-new-area {
+    margin: 0 auto;
+  }
+  .div_display {
+    flex-direction: column;
+  }
+  .cart-button {
+    margin-top: 15px;
+    padding: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -1193,9 +1292,6 @@ footer {
     align-items: center;
   }
 
-  .order-button a {
-    padding: 0;
-  }
   .div_display {
     flex-direction: column;
   }
@@ -1236,6 +1332,12 @@ footer {
   .scroll-new-area {
     height: 200px;
     font-size: 30px;
+  }
+
+  .words_from_reader {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 480px) {
