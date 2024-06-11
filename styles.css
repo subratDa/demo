@@ -635,7 +635,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 10px;
+}
+.grid-item p {
+  font-size: 18px;
 }
 .enhance_knowledge_and_vision {
   text-align: center;
@@ -1235,6 +1237,9 @@ footer {
     padding: 0;
     margin-bottom: 15px;
   }
+  .grid-item p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1338,6 +1343,18 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .grid-item p {
+    font-size: 12px;
+  }
+  .input-container {
+    flex-direction: column;
+  }
+  .enhance_knowledge_and_vision_grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .get_book_copy_today_div {
+    flex-direction: column;
   }
 }
 @media (max-width: 480px) {
