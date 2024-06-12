@@ -12,7 +12,7 @@
     <title>Book Landing Page</title>
   </head>
   <body>
-<header class="headder">
+    <header class="headder">
       <nav class="navigation">
         <div class="headder_logo_and_link">
           <div class="logo"><a href="#">Pages</a></div>
@@ -33,20 +33,19 @@
           <nav class="nav">
             <input type="checkbox" id="nav-check" />
             <div class="nav-btn">
-              <label for="nav-check">
+              <label for="nav-check" id="nav-icon">
                 <span></span>
                 <span></span>
                 <span></span>
               </label>
             </div>
-
             <ul class="nav-list">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contactus">Contact</a></li>
               <li class="menu-item dropdown">
-                <a href="#">Pages</a>
-                  <ul class="dropdown-content">
+                 <a href="#" id="dropdown-toggle">Pages</a> <!-- Changed to add id for JavaScript -->
+                  <ul class="dropdown-content" id="dropdown-menu"> 
                     <li><a href="#authorbook">Authors Book</a></li>
                     <li><a href="#enhenceknowledge">Enhance knowledge</a></li>
                     <li><a href="#wordfromreader">Word from reader</a></li>
@@ -54,15 +53,16 @@
                     <li><a href="#whatwillyoulearn">What will you learn</a></li>
                   </ul>
                  </li>
-             <ul class="cart-button">
+             <ul class="cart-button" id="cart-button">
             <li>
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </li>
           </ul>
-          <div class="order-button" ><a href="#">Order Today</a></div>
+          <div class="order-button" id="order-button"><a href="#">Order Today</a></div>
         </div>
       </nav>
     </header>
+    <script src="index.js"></script>
     <main class="container">
       <section class="intro" id="home">
         <div class="intro-text">
@@ -121,7 +121,7 @@
         />
       </div>
       <div class="right-set">
-        <div class="name">The Dark Light</div>
+        <div class="name">Dark Light</div>
        
         <div class="price">$86.11</div>
         <div class="description">
@@ -356,7 +356,7 @@
 
       <div class="div_display support-scrollsnap">
         <div class="scroll-new-container div_flex">
-          <div>
+          <div class="div-display-of-card">
             <div class="words_from_reader_card_view scroll-new-area">
               <div>
                 <div class="words_from_reader_card_view_name_ratting">
@@ -383,14 +383,12 @@
             </div>
             <div class="words_from_reader_card_view scroll-new-area">
               <div>
-                <div
-                  class="words_from_reader_card_view_name_ratting scroll-container"
-                >
+                <div class="words_from_reader_card_view_name_ratting">
                   <div class="words_from_reader_card_view_image-container">
-                    <img src="person2.jpeg" alt="Person with a laptop" />
+                    <img src="person1.jpeg" alt="Person with a laptop" />
                   </div>
                   <div class="words_from_reader_card_view_name_ratting_text">
-                    <p>Angelina Flora</p>
+                    <p>James Willium</p>
                     <div class="rating">
                       <div class="circle checked"></div>
                       <div class="circle checked"></div>
@@ -401,39 +399,38 @@
                   </div>
                 </div>
               </div>
-              <p>"Perfect Responce Author"</p>
+              <p>"Great book collection"</p>
               <h2>
-                I had a question about the book and the author responce was
-                great and responce was great and comfort.
+                I was searching this book for many years and I was happy that I
+                could find it here
               </h2>
             </div>
-          </div>
-          <div>
-          <div class="words_from_reader_card_view scroll-new-area">
-            <div>
-              <div class="words_from_reader_card_view_name_ratting">
-                <div class="words_from_reader_card_view_image-container">
-                  <img src="person3.jpeg" alt="Person with a laptop" />
-                </div>
-                <div class="words_from_reader_card_view_name_ratting_text">
-                  <p>Chris Adams</p>
-                  <div class="rating">
-                    <div class="circle checked"></div>
-                    <div class="circle checked"></div>
-                    <div class="circle checked"></div>
-                    <div class="circle checked"></div>
-                    <div class="circle half-checked"></div>
+            <div class="words_from_reader_card_view scroll-new-area">
+              <div>
+                <div class="words_from_reader_card_view_name_ratting">
+                  <div class="words_from_reader_card_view_image-container">
+                    <img src="person1.jpeg" alt="Person with a laptop" />
+                  </div>
+                  <div class="words_from_reader_card_view_name_ratting_text">
+                    <p>James Willium</p>
+                    <div class="rating">
+                      <div class="circle checked"></div>
+                      <div class="circle checked"></div>
+                      <div class="circle checked"></div>
+                      <div class="circle checked"></div>
+                      <div class="circle half-checked"></div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <p>"Great book collection"</p>
+              <h2>
+                I was searching this book for many years and I was happy that I
+                could find it here
+              </h2>
             </div>
-            <p>"Creative writting skill"</p>
-            <h2>
-              Sent an mail after the books arrived to ask about the author and I
-              received a reply
-            </h2>
           </div>
-          </div>
+
         </div>
       </div>
     </section>
