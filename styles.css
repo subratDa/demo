@@ -93,18 +93,11 @@ header {
   color: white;
 }
 .navbar a {
-  float: left;
   font-size: 16px;
-
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-/* 
-.dropdown {
-  float: left;
-  overflow: hidden;
-} */
 
 .dropdown .dropbtn {
   font-size: 16px;
@@ -124,16 +117,16 @@ header {
 
 .dropdown-content {
   display: none;
-  list-style: none;
   position: absolute;
+  margin-top: 10px;
+  list-style: none;
+  width: 180px;
   padding: 0;
   background-color: #3d62a1;
   min-width: 160px;
-  z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -206,7 +199,7 @@ header {
   border-radius: 5px;
   text-wrap: nowrap;
 }
-.show {
+.open {
   display: block;
 }
 
@@ -273,11 +266,11 @@ header {
 }
 
 .book-detail {
-  position: relative;
+  /* position: relative; */
   padding-left: 20px;
 }
 
-.book-detail::before {
+/* .book-detail::before {
   content: "";
   position: absolute;
   left: 0;
@@ -287,7 +280,7 @@ header {
   height: 8px;
   background-color: #ffc857;
   border-radius: 50%;
-}
+} */
 
 .featured-book img {
   width: 300px;
@@ -341,9 +334,9 @@ header {
 }
 .single-item {
   border: solid 6px #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   max-width: 400px;
-  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(106, 104, 104, 0.564);
   display: flex;
 }
 .left-set,
@@ -374,10 +367,7 @@ header {
   font-size: 27px;
 }
 .right-set .description p {
-  font-size: 0.9rem;
   text-align: justify;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto;
 }
 .right-set .color {
@@ -390,7 +380,6 @@ header {
 }
 
 .right-set button {
-  width: 100%;
   height: 2rem;
   cursor: pointer;
   background: none;
@@ -742,6 +731,7 @@ header {
 .words_from_reader_card_view {
   background-color: #1c3766;
   width: 260px;
+  height: 190px;
   justify-content: center;
 }
 .words_from_reader_card_view p {
@@ -764,6 +754,8 @@ header {
   margin-top: 10px;
   margin-left: 5px;
   padding: 6px;
+  width: 60px; /* Adjust as needed */
+  height: 60px;
 }
 .words_from_reader_card_view_name_ratting {
   display: flex;
@@ -933,6 +925,9 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.div-display-of-card {
+  display: contents;
 }
 
 footer {
@@ -1132,6 +1127,7 @@ footer {
   }
   .trusted_by_the_best_companies {
     flex-direction: row;
+    justify-content: flex-start;
   }
   .div_display {
     flex-direction: column;
@@ -1173,11 +1169,11 @@ footer {
     overflow: hidden;
   }
   .nav > .nav-list > li {
-    width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 20px;
   }
   .nav > #nav-check:checked ~ .nav-list {
-    height: calc(500px - 50px);
+    height: 100%;
+    width: 100%;
   }
   .scroll-container {
     display: flex;
@@ -1209,7 +1205,7 @@ footer {
     flex-direction: row;
   }
   .words_from_reader_card_view {
-    width: 130px;
+    width: calc(100% - 20px);
   }
   .scroll-new-container,
   .scroll-new-area {
@@ -1222,18 +1218,16 @@ footer {
   .scroll-new-container {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    padding: 20px;
     display: flex;
   }
 
   .scroll-new-area {
     scroll-snap-align: start;
+    margin: 0 165px;
     flex: 0 0 100%;
   }
 
-  .scroll-new-container,
-  .scroll-new-area {
-    margin: 0 auto;
-  }
   .div_display {
     flex-direction: column;
   }
@@ -1251,8 +1245,19 @@ footer {
   .div-display-of-card {
     display: flex;
     gap: 10px;
-    padding: 20px;
     max-width: 320px;
+  }
+  .div-inner-display {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .dropdown-content {
+    position: static;
+  }
+  .open {
+    display: block;
   }
 }
 
@@ -1321,6 +1326,7 @@ footer {
   }
   .trusted_by_the_best_companies {
     flex-direction: row;
+    justify-content: flex-start;
   }
   .scroll-container {
     display: flex;
@@ -1349,7 +1355,6 @@ footer {
   }
   .scroll-new-container,
   .scroll-new-area {
-    height: 200px;
     font-size: 30px;
   }
 
@@ -1370,6 +1375,4 @@ footer {
   .get_book_copy_today_div {
     flex-direction: column;
   }
-}
-@media (max-width: 480px) {
 }
