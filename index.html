@@ -14,7 +14,7 @@
   <body>
     <header class="headder">
       <nav class="navigation">
-        <div class="headder_logo_and_link">
+        <div class="headder_logo_and_link left-section">
           <div class="logo"><a href="#">Pages</a></div>
           <div class="social-links">
             <li>
@@ -23,13 +23,12 @@
             <li>
               <a href="#"><i class="fab fa-twitter"></i></a>
             </li>
-
             <li>
               <a href="#"><i class="fab fa-linkedin"></i></a>
             </li>
           </div>
         </div>
-        <div class="headder_logo_and_link">
+        <div class="headder_logo_and_link center-section">
           <nav class="nav">
             <input type="checkbox" id="nav-check" />
             <div class="nav-btn" id="nav-btn">
@@ -44,22 +43,38 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contactus">Contact</a></li>
               <li class="menu-item dropdown">
-                 <a href="#" id="dropdown-toggle">Pages</a> 
-                  <ul class="dropdown-content" id="dropdown-menu"> 
-                    <li><a href="#authorbook">Authors Book</a></li>
-                    <li><a href="#enhenceknowledge">Enhance knowledge</a></li>
-                    <li><a href="#wordfromreader">Word from reader</a></li>
-                    <li><a href="#article">Article</a></li>
-                    <li><a href="#whatwillyoulearn">What will you learn</a></li>
-                  </ul>
+                <a href="#" id="dropdown-toggle">Pages</a>
+                <ul class="dropdown-content" id="dropdown-menu">
+                  <li><a href="#authorbook">Authors Book</a></li>
+                  <li><a href="#enhenceknowledge">Enhance knowledge</a></li>
+                  <li><a href="#wordfromreader">Word from reader</a></li>
+                  <li><a href="#article">Article</a></li>
+                  <li><a href="#whatwillyoulearn">What will you learn</a></li>
+                </ul>
+              </li>
+              <ul class="cart-button" id="cart-button-nav">
+                <li>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 </li>
-             <ul class="cart-button" id="cart-button">
+              </ul>
+              <div class="order-button" id="order-button-nav">
+                <a href="#">Order Today</a>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="headder_logo_and_link right-section"
+          id="hadder-right-section"
+        >
+          <ul class="cart-button" id="cart-button">
             <li>
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </li>
-            </ul>
-            <div class="order-button" id="order-button"><a href="#">Order Today</a></div> 
-          </nav>
+          </ul>
+          <div class="order-button" id="order-button">
+            <a href="#">Order Today</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -95,46 +110,41 @@
       <h2>The Author’s Book</h2>
       <div class="yellow-line"></div>
       <div class="books">
-         <div class="single-item">
-      <div class="left-set">
-        <img
-          src="book2.jpg"
-          alt=""
-        />
-      </div>
-      <div class="right-set">
-        <div class="name">Atomic one's</div>
-        <div class="price">$13.84</div>
-        <div class="description">
-          <p>
-            As the book contains theoretical content as well as solved questions.
-          </p>
+        <div class="single-item">
+          <div class="left-set">
+            <img src="book2.jpg" alt="" />
+          </div>
+          <div class="right-set">
+            <div class="name">Atomic one's</div>
+            <div class="price">$13.84</div>
+            <div class="description">
+              <p>
+                As the book contains theoretical content as well as solved
+                questions.
+              </p>
+            </div>
+
+            <button>Order Now</button>
+          </div>
         </div>
+        <div class="single-item">
+          <div class="left-set">
+            <img src="book.jpg" alt="" />
+          </div>
+          <div class="right-set">
+            <div class="name">Dark Light</div>
 
-        <button>Order Now</button>
-      </div>
-    </div>
-         <div class="single-item">
-      <div class="left-set">
-        <img
-          src="book.jpg"
-          alt=""
-        />
-      </div>
-      <div class="right-set">
-        <div class="name">Dark Light</div>
-       
-        <div class="price">$86.11</div>
-        <div class="description">
-          <p>
-             As the book contains theoretical content as well as solved questions.
+            <div class="price">$86.11</div>
+            <div class="description">
+              <p>
+                As the book contains theoretical content as well as solved
+                questions.
+              </p>
+            </div>
 
-          </p>
+            <button>Order Now</button>
+          </div>
         </div>
-
-        <button>Order Now</button>
-      </div>
-    </div>
       </div>
     </section>
     <section class="about_the_author" id="about">
@@ -354,87 +364,86 @@
           <div>(4.8/5)</div>
         </div>
       </div>
-      <div class="div_display  ">
+      <div class="div_display">
         <div class="scroll-new-container div_flex">
           <div class="div-display-of-card">
             <div class="div-inner-display">
-            <div class="words_from_reader_card_view scroll-new-area">
-              <div>
-                <div class="words_from_reader_card_view_name_ratting">
-                  <div class="words_from_reader_card_view_image-container">
-                    <img src="person1.jpeg" alt="Person with a laptop" />
-                  </div>
-                  <div class="words_from_reader_card_view_name_ratting_text">
-                    <p>James Willium</p>
-                    <div class="rating">
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle half-checked"></div>
+              <div class="words_from_reader_card_view scroll-new-area">
+                <div>
+                  <div class="words_from_reader_card_view_name_ratting">
+                    <div class="words_from_reader_card_view_image-container">
+                      <img src="person1.jpeg" alt="Person with a laptop" />
+                    </div>
+                    <div class="words_from_reader_card_view_name_ratting_text">
+                      <p>James Willium</p>
+                      <div class="rating">
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle half-checked"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <p>"Great book collection"</p>
+                <h2>
+                  I was searching this book for many years and I was happy that
+                  I could find it here
+                </h2>
               </div>
-              <p>"Great book collection"</p>
-              <h2>
-                I was searching this book for many years and I was happy that I
-                could find it here
-              </h2>
-            </div>
-            <div class="words_from_reader_card_view scroll-new-area">
-              <div>
-                <div class="words_from_reader_card_view_name_ratting">
-                  <div class="words_from_reader_card_view_image-container">
-                    <img src="person2.jpeg" alt="Person with a laptop" />
-                  </div>
-                  <div class="words_from_reader_card_view_name_ratting_text">
-                    <p>James Willium</p>
-                    <div class="rating">
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle half-checked"></div>
+              <div class="words_from_reader_card_view scroll-new-area">
+                <div>
+                  <div class="words_from_reader_card_view_name_ratting">
+                    <div class="words_from_reader_card_view_image-container">
+                      <img src="person2.jpeg" alt="Person with a laptop" />
+                    </div>
+                    <div class="words_from_reader_card_view_name_ratting_text">
+                      <p>James Willium</p>
+                      <div class="rating">
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle half-checked"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <p>"Great book collection"</p>
+                <h2>
+                  I was searching this book for many years and I was happy that
+                  I could find it here
+                </h2>
               </div>
-              <p>"Great book collection"</p>
-              <h2>
-                I was searching this book for many years and I was happy that I
-                could find it here
-              </h2>
-            </div>
             </div>
             <div class="div-inner-display">
-            <div class="words_from_reader_card_view scroll-new-area">
-              <div>
-                <div class="words_from_reader_card_view_name_ratting">
-                  <div class="words_from_reader_card_view_image-container">
-                    <img src="person3.jpeg" alt="Person with a laptop" />
-                  </div>
-                  <div class="words_from_reader_card_view_name_ratting_text">
-                    <p>Chris Adams</p>
-                    <div class="rating">
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle checked"></div>
-                      <div class="circle half-checked"></div>
+              <div class="words_from_reader_card_view scroll-new-area">
+                <div>
+                  <div class="words_from_reader_card_view_name_ratting">
+                    <div class="words_from_reader_card_view_image-container">
+                      <img src="person3.jpeg" alt="Person with a laptop" />
+                    </div>
+                    <div class="words_from_reader_card_view_name_ratting_text">
+                      <p>Chris Adams</p>
+                      <div class="rating">
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle checked"></div>
+                        <div class="circle half-checked"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <p>"Creative writting skill"</p>
+                <h2>
+                  Sent an mail after the books arrived to ask about the author
+                  and I received a reply
+                </h2>
               </div>
-              <p>"Creative writting skill"</p>
-              <h2>
-                Sent an mail after the books arrived to ask about the author and I
-              received a reply
-              </h2>
             </div>
-            </div>  
           </div>
-
         </div>
       </div>
     </section>
